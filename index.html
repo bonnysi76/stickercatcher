@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Catcher Game - Bonny Sithole</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Emoji Catcher Game - Bonny Sithole</h1>
+      <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+    <div class="instructions">
+      <p>Catch the emojis by clicking on them! Select a sticker to start. Try to score as high as possible before time runs out!</p>
+    </div>
+
+    <div class="sticker-selection">
+      <h2>Select a Sticker:</h2>
+      <div class="sticker-option" style="background-image: url('https://i.imgur.com/1.png');" onclick="selectSticker(['https://i.imgur.com/1.png', 'https://i.imgur.com/2.png', 'https://i.imgur.com/3.png'])"></div>
+      <div class="sticker-option" style="background-image: url('https://i.imgur.com/2.png');" onclick="selectSticker(['https://i.imgur.com/2.png', 'https://i.imgur.com/3.png', 'https://i.imgur.com/1.png'])"></div>
+      <div class="sticker-option" style="background-image: url('https://i.imgur.com/3.png');" onclick="selectSticker(['https://i.imgur.com/3.png', 'https://i.imgur.com/1.png', 'https://i.imgur.com/2.png'])"></div>
+    </div>
+
+    <div class="scores-container">
+      <div class="total-score">
+        <h2>Your Score:</h2>
+        <h2 id="score">0</h2>
+      </div>
+      <div class="time">
+        <h2>Time left:</h2>
+        <h2 id="time-left">60</h2>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+        <div class="square" id="10"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
